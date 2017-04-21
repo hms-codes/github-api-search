@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<!--Indicate what type of content browser to expect-->
+<html>
+    <head>
+        <title>Github Hub</title>
+        <link rel="stylesheet" href="site.css"/>
+        <!-- crossbrowser support -->
+        <!--[if lt IE9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]--> 
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                    <li><a href="index.html"/>Home</a></li>
+                    <li><a href="Contact.html"/>Contact</a></li>
+                    <li><a href="About.html"/>About</a></li>
+                    </ul>            
+                </nav>                
+                <div><img src="img/logo.gif" class="bordered-image" />Github hub</div>
+                <div>This is a site to search Github for interesting projects.</div>
+
+            </header>
+            <section id="main">
+                <p>This is a site to search <a href="http://github.com"> Github </a> for interesting projects.
+                <span> is a site</span> to <em>search Github</em> for <strong>interesting</strong> projects.</p>
+                <form method="POST" action="" class="bordered-image simple_form" id="githubSearchForm">
+                    <label for="searchphrase"> search phrase:</label>
+                    <input type="text" name="searchphrase" id="searchphrase"/><br/>
+                    <label for="useStars"> use stars?<label>
+                    <input type="checkbox" value="search" name="useStars" checked="true" id="useStars" /><br/>
+                    <label for="langChoice"> Choose a language: <label>
+                    <select name="langChoice" id="langChoice">
+                        <option>All</option>
+                        <option selected>PHP</option>
+                        <option>JS</option>
+                        <option>Python</option>
+                    </select>
+                    <br />
+                    <input type="submit" value="search" />
+                </form>
+            </section>
+            <section id="other">
+                <div id="results" class="bordered-image">
+                    <button id="toggleButton">Hide</button>
+                    <div id="resultList">this is where we are</div>
+                </div>
+            </section>
+            <br />
+            <footer>
+                &copy; 2017 hms LLC
+            </footer>
+        </div>      
+        <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        </script>
+    </body>
+</html>
